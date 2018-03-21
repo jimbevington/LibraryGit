@@ -10,7 +10,7 @@ public class Book {
     private String title;
     private String author;
     private boolean onLoan;
-    private Borrower currentBorrower;
+    private Borrower borrower;
 
     public Book() {
     }
@@ -19,7 +19,7 @@ public class Book {
         this.title = title;
         this.author = author;
         this.onLoan = false;
-        this.currentBorrower = null;
+        this.borrower = null;
     }
 
     @Id
@@ -61,11 +61,11 @@ public class Book {
     }
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
-    public Borrower getCurrentBorrower() {
-        return currentBorrower;
+    public Borrower getBorrower() {
+        return borrower;
     }
 
-    public void setCurrentBorrower(Borrower currentBorrower) {
-        this.currentBorrower = currentBorrower;
+    public void setBorrower(Borrower borrower) {
+        this.borrower = borrower;
     }
 }
