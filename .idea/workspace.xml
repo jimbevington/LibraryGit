@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4c8326d-ada0-4447-b6d0-04329ae4ae48" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Book.java" afterPath="$PROJECT_DIR$/src/main/java/models/Book.java" />
-    </list>
+    <list default="true" id="e4c8326d-ada0-4447-b6d0-04329ae4ae48" name="Default" comment="" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
