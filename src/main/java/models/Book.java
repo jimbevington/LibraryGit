@@ -15,15 +15,15 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String author, boolean onLoan, Borrower currentBorrower) {
+    public Book(String title, String author) {
         this.title = title;
         this.author = author;
-        this.onLoan = onLoan;
-        this.currentBorrower = currentBorrower;
+        this.onLoan = false;
+        this.currentBorrower = null;
     }
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     public int getId() {
         return id;
