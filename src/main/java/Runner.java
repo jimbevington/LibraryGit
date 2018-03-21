@@ -8,7 +8,8 @@ public class Runner {
 
     public static void main(String[] args) {
 
-
+        DBHelper.deleteAll(Borrower.class);
+        DBHelper.deleteAll(Book.class);
 
         Borrower borrower1 = new Borrower("Jonathan Cruickshank");
         DBHelper.saveOrUpdate(borrower1);
@@ -25,6 +26,8 @@ public class Runner {
 
         Book foundBook = DBHelper.find(Book.class, book1.getId());
         List<Book> books = DBHelper.getAll(Book.class);
+
+
 
     }
 
