@@ -2,6 +2,8 @@ package models;
 
 import javax.persistence.*;
 
+@Entity
+@Table(name="books")
 public class Book {
 
     private int id;
